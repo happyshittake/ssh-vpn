@@ -1,0 +1,14 @@
+[package]
+name = "ssh-bridge"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+futures = "0.3.34"
+netstack-smoltcp = "0.2.4"
+russh = "0.65"
+russh-config = "0.58.0"
+tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread", "net", "io-util", "signal", "time", "process"] }
+tokio-socks = "0.5.3"
+tun = { version = "0.8", features = ["async"] }
